@@ -27,5 +27,4 @@
 .call-notes strong{color:var(--ink);font-weight:650}
 .call-notes .text-link{font-weight:600}
 @media(max-width:780px){.call-notes{padding:22px 20px}.action-row .button{flex:1 1 100%}}
-.topic-questions{margin:0;padding-left:20px;font-size:15px;line-height:1.7;color:var(--body)}
-.topic-questions li+li{margin-top:6px}
+.topic-text{margin:0 0 10px;max-width:860px;font-size:15px;line-height:1.75;color:var(--body)}
