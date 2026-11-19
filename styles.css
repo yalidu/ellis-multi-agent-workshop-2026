@@ -28,3 +28,5 @@
 .call-notes .text-link{font-weight:600}
 @media(max-width:780px){.call-notes{padding:22px 20px}.action-row .button{flex:1 1 100%}}
 .topic-text{margin:0 0 10px;max-width:860px;font-size:15px;line-height:1.75;color:var(--body)}
+
+.call-dates del{color:var(--body);font-weight:400;text-decoration-thickness:1px}
