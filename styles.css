@@ -292,3 +292,17 @@ h2.eyebrow{font-size:12.5px;line-height:1.5;letter-spacing:2.4px;margin:0;font-w
 /* 2026-11-26 title only: Source Serif 4 upright for the hero title; body text keeps the system font */
 body .hero h1,body .hero h1 em{font-family:"Source Serif 4",Georgia,serif!important;font-weight:600;font-style:normal;letter-spacing:-1.2px}
 @media(max-width:560px){.status-pill{display:inline-block;max-width:300px;line-height:1.55;font-size:13.5px}.status-dot{display:inline-block;margin-right:7px;vertical-align:1px}}
+
+/* 2026-11-26 (per Yali): schedule leads with the speaker; larger portraits */
+.sched-avatar{width:68px;height:68px;margin-top:0}
+.schedule td.talk{gap:22px;align-items:center}
+.schedule h3.who-name{font-size:21px;font-weight:600;margin:0 0 2px;color:#1b2a24}
+.schedule td p.who-aff{font-size:15px;color:#2f6b47;font-weight:500;margin:0 0 6px}
+.schedule td p.talk-title{font-size:16.5px;color:var(--body);font-style:italic}
+.schedule td p.talk-title.tba{color:var(--muted);font-style:normal;font-size:14.5px}
+.flash-row h3 a{color:inherit;text-decoration:underline;text-decoration-color:rgba(47,107,71,.35);text-underline-offset:4px}
+.flash-row h3 a:hover{text-decoration-color:currentColor}
+/* speaker cards a little larger */
+.portrait-link,.portrait-link img{width:168px;height:168px}
+.speaker h3{font-size:19px}
+@media(max-width:560px){.portrait-link,.portrait-link img{width:120px;height:120px}.schedule td.talk{display:block}}
