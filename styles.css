@@ -306,3 +306,43 @@ body .hero h1,body .hero h1 em{font-family:"Source Serif 4",Georgia,serif!import
 .portrait-link,.portrait-link img{width:168px;height:168px}
 .speaker h3{font-size:19px}
 @media(max-width:560px){.portrait-link,.portrait-link img{width:120px;height:120px}.schedule td.talk{display:block}}
+
+/* 2026-11-26 speaker profiles: larger portraits, role and research focus */
+.speaker-grid{grid-template-columns:repeat(5,1fr);gap:26px}
+.portrait-link,.portrait-link img{width:184px;height:184px;max-width:100%}
+.portrait-link{box-shadow:0 0 0 5px #fff,0 8px 24px rgba(31,68,49,.12)}
+.speaker:hover .portrait-link{box-shadow:0 0 0 5px #fff,0 14px 30px rgba(31,68,49,.2)}
+.speaker-body{padding:22px 2px 0}
+.speaker h3{font-size:19px;line-height:1.3;margin-bottom:6px}
+.speaker .affiliation{font-size:14px;font-weight:600;color:#2f6b47;margin:0 0 8px;line-height:1.45}
+.speaker-role{font-size:13.5px;line-height:1.5;color:var(--muted);margin:0 0 12px}
+.speaker-research{font-size:14.5px;line-height:1.55;color:var(--body);margin:0;padding-top:12px;border-top:1px solid #e6ece4}
+.speaker-talk{margin:12px 0 0;font-size:14.5px;line-height:1.5;color:#1b2a24;font-style:italic}
+.speaker-talk span{display:block;font-style:normal;font-size:11px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;color:#946414;margin-bottom:3px}
+@media(max-width:1000px){.speaker-grid{grid-template-columns:repeat(3,1fr);row-gap:44px}}
+@media(max-width:560px){.speaker-grid{grid-template-columns:1fr;gap:30px}.speaker{display:grid;grid-template-columns:112px 1fr;gap:18px;text-align:left;align-items:start}.portrait-link,.portrait-link img{width:112px;height:112px}.speaker-body{padding:4px 0 0}}
+
+/* 2026-11-26 profile detail lives in the timetable; speaker grid stays compact */
+.sched-avatar{width:92px;height:92px;box-shadow:0 0 0 4px #fff,0 6px 18px rgba(31,68,49,.12)}
+.schedule td.talk{gap:26px;align-items:flex-start}
+.schedule td{padding:26px 0 28px}
+.schedule tbody th{padding-top:30px}
+.schedule td p.who-aff{margin:0 0 6px}
+.schedule .who-role{color:var(--muted);font-weight:400}
+.schedule td p.who-research{font-size:15px;color:var(--body);margin:0 0 10px;max-width:640px}
+.schedule td p.talk-title{font-size:17px;font-style:normal;font-weight:600;color:#1b2a24}
+.schedule td p.talk-title:before{content:"Talk  ";font-size:11px;font-weight:700;letter-spacing:1.6px;color:#946414;margin-right:6px}
+.schedule td p.talk-title.tba{font-weight:400;font-size:14.5px;color:var(--muted)}
+.schedule td p.talk-title.tba:before{content:none}
+.speaker-role{margin-bottom:10px}
+@media(max-width:780px){.sched-avatar{width:72px;height:72px}}
+@media(max-width:560px){.sched-avatar{display:block;width:76px;height:76px;margin-bottom:10px}.schedule td.talk{display:block}}
+.schedule td p.talk-title.plain:before{content:none}
+
+/* 2026-11-26 schedule names and portraits link to each speaker's own page */
+.sched-avatar-link{flex:none;border-radius:50%;transition:transform .2s}
+.sched-avatar-link:hover{transform:translateY(-2px)}
+.schedule h3.who-name a{color:inherit;text-decoration:none;border-bottom:1px solid transparent;transition:border-color .15s,color .15s}
+.schedule h3.who-name a span{font-size:15px;color:#75916d;padding-left:2px}
+.schedule h3.who-name a:hover{color:#2f6b47;border-bottom-color:rgba(47,107,71,.4)}
+@media(max-width:560px){.sched-avatar-link{display:inline-block;margin-bottom:10px}.sched-avatar-link .sched-avatar{margin-bottom:0}}
