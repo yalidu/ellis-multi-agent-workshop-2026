@@ -288,3 +288,7 @@ h2.eyebrow{font-size:12.5px;line-height:1.5;letter-spacing:2.4px;margin:0;font-w
 .heading-note{margin:10px 0 0;font-size:15px;color:var(--muted)}
 .section-heading{margin-bottom:30px}
 #discussion h2.eyebrow{color:#e2c27e}
+
+/* 2026-11-26 title only: Source Serif 4 upright for the hero title; body text keeps the system font */
+body .hero h1,body .hero h1 em{font-family:"Source Serif 4",Georgia,serif!important;font-weight:600;font-style:normal;letter-spacing:-1.2px}
+@media(max-width:560px){.status-pill{display:inline-block;max-width:300px;line-height:1.55;font-size:13.5px}.status-dot{display:inline-block;margin-right:7px;vertical-align:1px}}
