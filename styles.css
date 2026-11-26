@@ -30,3 +30,236 @@
 .topic-text{margin:0 0 10px;max-width:860px;font-size:15px;line-height:1.75;color:var(--body)}
 
 .call-dates del{color:var(--body);font-weight:400;text-decoration-thickness:1px}
+.paper-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,1fr);gap:22px}.paper{background:#f5f8f3;border:1px solid #e5ece1;border-radius:7px;padding:22px 22px 24px}.paper-type{font-size:10px;text-transform:uppercase;letter-spacing:1.4px;font-weight:600;color:#526e53}.paper h3{font-size:17px;font-weight:500;margin:6px 0 10px}.paper p{margin:0;font-size:13px;color:var(--body)}.presenter{text-decoration:underline;text-underline-offset:3px;font-weight:600}.schedule details.abstract summary{cursor:pointer;color:#526e53;font-weight:600}.schedule details.abstract p{margin-top:8px;font-size:12px;color:var(--muted)}
+@media(max-width:780px){.paper-list{grid-template-columns:1fr;gap:16px}.paper h3{font-size:16px}}
+
+/* 2026-11-26 readability pass: darker text, larger small print, compact round speaker portraits */
+:root{--ink:#1b2a24;--body:#2f3a34;--muted:#4c5a52;font-family:Roboto,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}
+body{font-size:17px;-webkit-font-smoothing:antialiased}
+h2{font-weight:600;letter-spacing:-.5px}h3{font-weight:600}
+.eyebrow{font-size:12px;font-weight:700}
+.nav-links a{font-size:13.5px;letter-spacing:.3px}
+.section-note{font-size:14px;color:var(--muted)}
+.hero-subtitle{color:#3c5446;font-weight:400}.event-meta{font-size:15px;color:#33493b}.hero-note{font-size:13.5px;color:#405244}
+.about-copy p,.calls-intro,.topic-text{font-size:17px;color:var(--body)}
+.call-card p:not(.call-format):not(.call-subtitle),.call-notes ul,.question p{font-size:15.5px;color:var(--body)}
+.call-format{font-size:12px}.submission-details p{font-size:14px;color:var(--muted)}.call-dates dt{font-size:11.5px}
+.small-note{font-size:14px;color:var(--muted)}
+.programme-intro{font-size:16px;color:var(--body)}
+.schedule thead th{font-size:12px}.session-type{font-size:11.5px;color:#3f5f44}
+.schedule h3{font-size:19px;font-weight:600}
+.schedule td p{font-size:15.5px;color:var(--body)}.schedule td .schedule-detail{font-size:14px;color:var(--muted)}
+.schedule details.abstract p{font-size:14.5px;line-height:1.7;color:var(--body)}
+.question h3{font-weight:600}
+.attendance p:not(.eyebrow),.venue-details dd{font-size:15.5px}.venue-details dt{font-size:11.5px}
+.organizer p{font-size:15px}.organizer .organizer-role{font-size:13.5px}
+/* speakers: one row of five, round portraits */
+.speaker-grid{grid-template-columns:repeat(5,1fr);gap:20px}
+.speaker{background:none;border:0;border-radius:0;text-align:center;overflow:visible}
+.portrait-link{width:150px;height:150px;margin:0 auto;border-radius:50%;box-shadow:0 0 0 4px #fff,0 0 0 5px #d3e0d0}
+.portrait-link img{width:150px;height:150px;aspect-ratio:1;object-position:50% 25%}
+.speaker-body{padding:18px 4px 0}
+.speaker h3{font-size:17px;line-height:1.35;margin-bottom:6px}
+.affiliation{font-size:14px;line-height:1.55;min-height:0;margin:0 0 10px;color:#33493b}
+.speaker-detail{border-top:0;padding-top:0;font-size:14px;line-height:1.5;min-height:0;color:var(--muted)}
+.paper h3{font-size:18px;font-weight:600}.paper p{font-size:15px}.paper-type{font-size:11.5px;color:#3f5f44}
+@media(max-width:1000px){.speaker-grid{grid-template-columns:repeat(3,1fr);row-gap:36px}}
+@media(max-width:780px){.schedule td p{font-size:14px}.schedule h3{font-size:17px}.affiliation,.speaker-detail{font-size:13px;min-height:0}}
+@media(max-width:560px){.speaker-grid{grid-template-columns:1fr 1fr;gap:28px 14px}.speaker{display:block}.portrait-link,.portrait-link img{width:120px;height:120px;min-height:0}.speaker-body{padding:14px 2px 0}.speaker h3{font-size:15.5px}}
+
+/* 2026-11-26 design pass: serif display headings, quiet network motif, refined details */
+h1,h2,.attendance h2{font-family:"Source Serif 4",Georgia,serif;font-weight:600;letter-spacing:-.6px}
+h1{letter-spacing:-1.4px;font-weight:600}
+h2{font-size:36px;line-height:1.22}
+.section-heading .eyebrow,.attendance .eyebrow,.contact .eyebrow{display:flex;align-items:center;gap:10px}
+.section-heading .eyebrow:before,.attendance .eyebrow:before,.contact .eyebrow:before{content:"";width:22px;height:2px;background:#8fb08a;border-radius:2px}
+.hero{position:relative;overflow:hidden;background:radial-gradient(ellipse at 50% 0%,#f9fcf8 0%,rgba(249,252,248,0) 60%),linear-gradient(120deg,#e3eee3 0%,#f5f9f4 55%,#e6efe5 100%)}
+.hero:before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.55;background-repeat:no-repeat;background-position:left -40px center,right -40px center;background-size:auto 115%,auto 115%;
+background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 420'%3E%3Cg stroke='%2391b08b' stroke-width='1.1' fill='none' opacity='.75'%3E%3Cpath d='M40 60L150 120L95 230L210 270L170 380M150 120L260 90M95 230L30 330M210 270L310 200L260 90'/%3E%3C/g%3E%3Cg fill='%237fa278'%3E%3Ccircle cx='40' cy='60' r='5'/%3E%3Ccircle cx='150' cy='120' r='7'/%3E%3Ccircle cx='95' cy='230' r='5'/%3E%3Ccircle cx='210' cy='270' r='8'/%3E%3Ccircle cx='170' cy='380' r='4'/%3E%3Ccircle cx='260' cy='90' r='4.5'/%3E%3Ccircle cx='30' cy='330' r='4'/%3E%3Ccircle cx='310' cy='200' r='5.5'/%3E%3C/g%3E%3C/svg%3E"),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 420'%3E%3Cg stroke='%2391b08b' stroke-width='1.1' fill='none' opacity='.75'%3E%3Cpath d='M320 50L210 140L270 240L150 290L200 390M210 140L90 100M270 240L340 330M150 290L50 210L90 100'/%3E%3C/g%3E%3Cg fill='%237fa278'%3E%3Ccircle cx='320' cy='50' r='5'/%3E%3Ccircle cx='210' cy='140' r='7.5'/%3E%3Ccircle cx='270' cy='240' r='5'/%3E%3Ccircle cx='150' cy='290' r='7'/%3E%3Ccircle cx='200' cy='390' r='4'/%3E%3Ccircle cx='90' cy='100' r='4.5'/%3E%3Ccircle cx='340' cy='330' r='4'/%3E%3Ccircle cx='50' cy='210' r='5.5'/%3E%3C/g%3E%3C/svg%3E")}
+.hero-inner{position:relative}
+.status-pill{display:inline-flex;align-items:center;gap:9px;margin:0 0 26px;padding:7px 16px 7px 13px;border:1px solid #c9d9c5;border-radius:999px;background:rgba(255,255,255,.75);font-size:13.5px;font-weight:500;color:#2f4a37;box-shadow:0 1px 2px rgba(30,60,40,.06);transition:border-color .15s,background .15s}
+.status-pill:hover{background:#fff;border-color:#9fbb98;color:#234832}
+.status-dot{width:8px;height:8px;border-radius:50%;background:#4f8a5b;box-shadow:0 0 0 3px rgba(79,138,91,.18)}
+.button{border-radius:999px;padding-inline:24px;font-size:14px}
+.primary{box-shadow:0 4px 14px rgba(49,93,67,.22)}
+.closed-note{margin:0 0 26px;padding:14px 18px;border:1px solid #d6e2d2;border-radius:8px;background:#f7faf6;font-size:15.5px;color:var(--body)}
+.closed-note strong{color:var(--ink)}
+.call-dates dt{color:#3f5f44}
+/* speakers */
+.portrait-link{transition:transform .25s,box-shadow .25s}
+.speaker:hover .portrait-link{transform:translateY(-3px);box-shadow:0 0 0 4px #fff,0 0 0 5px #9fbb98,0 10px 22px rgba(30,60,40,.14)}
+.portrait-link:hover img{transform:none}
+.speaker-detail em{font-style:italic;color:#2f4a37}
+/* schedule */
+.schedule-container{border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.schedule tbody th{color:#315d43;font-weight:600}
+.schedule tbody tr{transition:background .15s}
+.schedule tbody tr:hover{background:#fafcf9}
+.schedule td.talk{display:flex;gap:18px;align-items:flex-start}
+.sched-avatar{width:52px;height:52px;border-radius:50%;object-fit:cover;object-position:50% 25%;flex:none;margin-top:4px;box-shadow:0 0 0 3px #fff,0 0 0 4px #d3e0d0}
+.flash-row{background:#fbfaf3}.flash-row:hover{background:#f8f7ee!important}
+.flash-row .session-type{color:#7a6a2c}
+.panel-row:hover{background:#f1f6ee!important}
+/* papers */
+.paper{position:relative;background:#fff;border:1px solid #dfe8dc;border-radius:10px;padding:24px 24px 24px 26px;transition:box-shadow .2s,transform .2s}
+.paper:before{content:"";position:absolute;left:0;top:18px;bottom:18px;width:3px;border-radius:0 3px 3px 0;background:#b9cdb4}
+.paper:has(.paper-type.talk):before{background:#4f8a5b}
+.paper:hover{box-shadow:0 8px 24px rgba(30,60,40,.09);transform:translateY(-2px)}
+.paper-type.talk{color:#315d43}
+.paper h3{font-family:"Source Serif 4",Georgia,serif;font-size:19px;line-height:1.4}
+.presenter{text-decoration-color:#8fb08a;text-decoration-thickness:2px}
+@media(max-width:780px){h2{font-size:29px}.status-pill{font-size:12px;padding:6px 13px 6px 11px}.hero:before{opacity:.3}}
+@media(max-width:560px){.schedule td.talk{gap:12px}.sched-avatar{width:40px;height:40px}.hero:before{display:none}}
+.hero:before{opacity:.32;background-size:auto 100%,auto 100%;background-position:left -150px center,right -150px center}
+@media(max-width:1000px){.hero:before{opacity:.2}}
+@media(max-width:560px){.sched-avatar{display:none}.schedule td.talk{display:block}}
+
+/* accent colour: ochre gold, paired with the forest green, used sparingly for "news" and talks */
+:root{--accent:#a8741f;--accent-soft:#f6efe0}
+.status-dot{background:var(--accent);box-shadow:0 0 0 3px rgba(168,116,31,.18)}
+.flash-row{background:var(--accent-soft)}.flash-row:hover{background:#f1e6cf!important}
+.flash-row .session-type,.paper-type.talk{color:#946414}
+.paper:has(.paper-type.talk):before{background:var(--accent)}
+.presenter{text-decoration-color:var(--accent)}
+.closed-note{border-left:3px solid var(--accent)}
+
+/* 2026-11-26 colour & type pass, after Log4Science and the main ELLIS site */
+h1 em,h2 em{font-style:italic;font-weight:500;color:#2f6b47}
+h1 em{color:#2c6644}
+.eyebrow{color:#946414}
+.section-heading .eyebrow:before,.attendance .eyebrow:before,.contact .eyebrow:before{background:var(--accent)}
+.hero .eyebrow{color:#946414}
+.hero-subtitle{font-family:"Source Serif 4",Georgia,serif;font-style:italic;font-size:25px;color:#3c5446}
+.affiliation{color:#2f6b47;font-weight:500}
+.speaker-detail em{font-family:"Source Serif 4",Georgia,serif;font-size:15.5px;color:#1b2a24}
+.schedule h3{font-family:"Source Serif 4",Georgia,serif;font-size:20.5px;font-weight:600}
+.schedule tbody th{color:#2f6b47}
+.schedule .who,.schedule td strong{color:#1b2a24;font-weight:600}
+.panel-row td p strong{display:inline-block;min-width:92px;font-size:11.5px;letter-spacing:1.1px;text-transform:uppercase;color:#2f6b47}
+.question-number{font-family:"Source Serif 4",Georgia,serif;font-size:22px;line-height:1.2;color:var(--accent);border-top-color:var(--accent);font-weight:600}
+.question h3{font-family:"Source Serif 4",Georgia,serif;font-size:20px}
+.call-card h3,.call-notes h3,.organizer h3,.speaker h3{font-family:"Source Serif 4",Georgia,serif}
+.speaker h3{font-size:18.5px}
+.call-format{color:#946414}
+.topic-label{color:#946414}
+.text-link{color:#2f6b47;text-decoration:underline;text-decoration-color:rgba(47,107,71,.35);text-underline-offset:3px}
+.text-link:hover{text-decoration-color:currentColor}
+.calls-intro strong,.call-card strong,.call-notes strong{color:#2f6b47}
+.wordmark{color:#2c6644}.wordmark span{color:#946414}
+
+/* 2026-11-26 editorial pass: fewer rules and boxes, stronger type scale */
+.section{border-bottom:0;padding:84px 0}
+.section + .section{border-top:0}
+.section-heading .eyebrow:before,.attendance .eyebrow:before,.contact .eyebrow:before{content:none}
+.eyebrow{letter-spacing:2.4px;font-size:11.5px}
+h2{font-size:46px;line-height:1.12;letter-spacing:-1px}
+.section-heading{margin-bottom:40px}
+.about{align-items:start}.about-copy p:first-child{font-family:"Source Serif 4",Georgia,serif;font-size:22px;line-height:1.55;color:var(--ink)}
+.about-copy p{font-size:16.5px}
+/* hero */
+.status-pill{border:0;box-shadow:none;background:none;padding:0;font-size:13px;letter-spacing:.2px;color:#3c5446}
+.status-pill:hover{background:none;text-decoration:underline;text-underline-offset:4px}
+.primary{box-shadow:none}
+/* calls folded */
+.closed-lead{font-family:"Source Serif 4",Georgia,serif;font-size:22px;line-height:1.5;margin:0 0 22px;color:var(--ink);max-width:760px}
+.call-details summary{cursor:pointer;list-style:none;display:inline-flex;align-items:center;gap:10px;font-size:14px;font-weight:600;color:#2f6b47}
+.call-details summary::-webkit-details-marker{display:none}
+.call-details summary:before{content:"+";font-size:20px;font-weight:400;line-height:1;width:14px}
+.call-details[open] summary:before{content:"–"}
+.call-details[open] summary{margin-bottom:30px}
+.call-card{background:none;border:0;border-radius:0;padding:0}
+.call-notes{background:none;border:0;border-radius:0;padding:0}
+.call-dates{border-left:0;padding-left:0}
+/* speakers */
+.portrait-link,.speaker:hover .portrait-link{box-shadow:none}
+.speaker:hover .portrait-link{box-shadow:0 12px 26px rgba(30,60,40,.16)}
+/* schedule as a quiet list */
+.schedule-container{border:0;border-radius:0;overflow:visible}
+.schedule thead{display:none}
+.schedule tbody tr{border-bottom:0}
+.schedule tbody tr:hover,.flash-row:hover,.panel-row:hover{background:none!important}
+.schedule tbody th{font-family:"Source Serif 4",Georgia,serif;font-size:19px;font-weight:500;padding:22px 22px 22px 0;width:150px}
+.schedule td{padding:20px 0 22px}
+.sched-avatar{box-shadow:none}
+.flash-row,.panel-row{background:none}
+.flash-row h3,.panel-row h3{font-size:24px}
+.flash-row td,.panel-row td{padding-top:30px;padding-bottom:30px}
+.flash-row th,.panel-row th{padding-top:32px}
+/* papers as an editorial list */
+.paper-list{grid-template-columns:1fr;gap:0;counter-reset:paper}
+.paper{background:none;border:0;border-radius:0;padding:26px 0 26px 64px;counter-increment:paper}
+.paper+.paper{border-top:1px solid #e6ece4}
+.paper:before,.paper:has(.paper-type.talk):before{content:counter(paper,decimal-leading-zero);position:absolute;left:0;top:26px;bottom:auto;width:auto;background:none;font-family:"Source Serif 4",Georgia,serif;font-size:22px;color:#9db39a;border-radius:0}
+.paper:has(.paper-type.talk):before{color:var(--accent)}
+.paper:hover{box-shadow:none;transform:none}
+.paper h3{font-size:23px;line-height:1.35;margin:4px 0 8px;max-width:860px}
+.paper p{font-size:15.5px}
+/* questions */
+.question-number{border-top:0;padding-top:0;font-size:30px}
+/* attendance without a tinted block */
+.attendance{background:none;border-radius:0;padding:0;margin-top:84px}
+.venue-details{border-left:1px solid #e3eae1;padding-left:40px}
+.venue-details dd{font-family:"Source Serif 4",Georgia,serif;font-size:19px}
+.organizer img{box-shadow:none}
+@media(max-width:780px){h2{font-size:34px}.section{padding:56px 0}.about-copy p:first-child,.closed-lead{font-size:19px}.paper{padding-left:46px}.paper h3{font-size:19px}.schedule tbody th{width:auto;font-size:16px}}
+@media(max-width:560px){.venue-details{border-left:0;padding-left:0;border-top:0}.schedule tbody th{padding:18px 10px 4px 0;display:block;width:auto}.schedule tbody tr{display:block;padding-bottom:8px}.schedule td{display:block;padding:0 0 18px}.flash-row td,.panel-row td{padding:0 0 18px}.flash-row th,.panel-row th{padding-top:18px}}
+.venue-details dd span{font-family:Roboto,Arial,sans-serif;font-size:13.5px;color:var(--muted)}
+
+/* 2026-11-26 type refinement: Source Serif 4 for reading text, Source Sans 3 for labels and interface */
+:root{font-family:"Source Sans 3",-apple-system,"Segoe UI",Arial,sans-serif}
+.about-copy p,.calls-intro,.topic-text,.call-card p:not(.call-format):not(.call-subtitle),.call-notes ul,.question p,.programme-intro,.schedule details.abstract p,.attendance p:not(.eyebrow),.closed-lead,.contact p,.small-note{font-family:"Source Serif 4",Georgia,serif}
+.about-copy p{font-size:18px;line-height:1.75}
+.about-copy p:first-child{font-size:23px;line-height:1.5}
+.question p{font-size:16.5px;line-height:1.7}
+.programme-intro{font-size:17px}
+.small-note{font-size:15px}
+.speaker-detail,.affiliation{font-size:15px}
+.speaker-detail{font-family:"Source Serif 4",Georgia,serif;font-style:italic}
+.speaker-detail em{font-style:italic;font-size:inherit;color:#1b2a24}
+.schedule td p{font-size:16.5px}
+.schedule td .schedule-detail{font-size:15px}
+.paper p{font-size:16.5px}
+.nav-links a{font-size:14.5px;font-weight:600;letter-spacing:.2px}
+.eyebrow,.session-type,.paper-type,.call-format,.topic-label,.panel-row td p strong{font-weight:700}
+.button{font-size:15px;font-weight:600}
+.event-meta{font-size:16px}
+.hero-note{font-size:14.5px}
+.status-pill{font-size:14.5px}
+
+/* 2026-11-26 colour bands: each part of the page gets its own ground, buttons split by purpose */
+:root{--band-cream:#f8f5ef;--band-green:#eaf2e8;--band-deep:#1f4431;--band-coral:#f6efe0}
+.band{position:relative;box-shadow:0 0 0 100vmax var(--band-bg);clip-path:inset(0 -100vmax);background:var(--band-bg)}
+#calls{--band-bg:var(--band-cream)}
+#programme{--band-bg:var(--band-green)}
+#discussion{--band-bg:var(--band-deep)}
+#attend{--band-bg:var(--band-coral)}
+#calls,#programme,#discussion,#attend{position:relative;box-shadow:0 0 0 100vmax var(--band-bg);clip-path:inset(0 -100vmax);background:var(--band-bg)}
+#attend{margin-top:0;padding:84px 0;border-radius:0}
+/* programme band: schedule sits on a white sheet so it reads as one object */
+#programme .schedule-container{background:#fff;border-radius:14px;padding:12px 34px;box-shadow:0 1px 2px rgba(31,68,49,.05),0 12px 32px rgba(31,68,49,.07)}
+#programme .schedule tbody th{padding-left:0}
+#programme .flash-row td,#programme .flash-row th{background:none}
+/* deep green discussion band */
+#discussion h2,#discussion .question h3{color:#fff}
+#discussion h2 em{color:#b9dcbf}
+#discussion .eyebrow{color:#e2c27e}
+#discussion .question p{color:#cfe0d2}
+#discussion .question-number{color:#e2c27e}
+/* calls band */
+#calls .closed-lead{color:#1b2a24}
+.call-details summary{padding:10px 18px;border-radius:999px;background:#fff;box-shadow:0 1px 2px rgba(31,68,49,.08);transition:background .15s}
+.call-details summary:hover{background:#f1f6ef}
+/* buttons: green = explore the page, coral = register */
+.button.register{background:var(--accent);border-color:var(--accent);color:#fff;box-shadow:0 6px 16px rgba(168,116,31,.25)}
+.button.register:hover{background:#8a5c12;border-color:#8a5c12;color:#fff}
+.button.register-outline{background:#fff;border-color:#dcc59a;color:#946414}
+.button.register-outline:hover{background:var(--band-coral);color:#7a510f}
+.button.primary{box-shadow:0 6px 16px rgba(49,93,67,.22)}
+#attend .eyebrow{color:#946414}
+#attend .venue-details{border-left-color:#e7d6b2}
+#attend .venue-details dt{color:#946414}
+/* abstract toggle as a small pill */
+.schedule details.abstract summary{display:inline-block;margin-top:6px;padding:3px 12px;border-radius:999px;background:#eef4ec;font-size:13px;list-style:none}
+.schedule details.abstract summary::-webkit-details-marker{display:none}
+.schedule details.abstract[open] summary{background:#dde9da}
+@media(max-width:780px){#programme .schedule-container{padding:4px 18px;border-radius:12px}#attend{padding:56px 0}}
